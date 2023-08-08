@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <html land="en">
+  <head>
+   <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+	 <script>
+	  function validate()
+	  {
+	   var result=true;
+	   var e=documnet.getElementByName("emial")[0].value;
+	   var atindex=e.indexOf('@');
+	   var dotindex=e.lastIndexOf('.');
+	   if(atindex<1 || dotindex>=e.length-2 || dotindex-atindex<3)
+	    result=false;
+	   return(result);
+	  }
+	 </script>
+  </head>
+  <body>
+   <h1 id="h1">KALA EK IMPRESARIO<br/>
+    <nav>
+     <a href="homepage.html">Home Page</a>||||
+        <a href="dreamcatcher.html">Dream Catcher</a>||||
+        <a href="devotionalcollection.html">Devotional Collections</a>||||
+        <a href="designerdiya.html">Designer Diya</a>||||
+        <a href="mandala.html">Mandala</a>||||
+        <a href="illustrations.html">Illustrations</a>||||
+		<a href="dreamcatcherkeyrings.html">Dream Catcher KeyRings</a>||||
+        <a href="artistspage.html">Arists </a>||||
+        <a href="loginpage.html">Login</a>||||<br/>
+		<a href="peacockartworks.html">Peacock Artworks</a>||||
+		<a href="blackmandala.html">Black Mandala</a>||||
+		<a href="abstractart.html">Abstract Art</a>||||
+		<a href="glasspainting.html">Glass Painting</a>||||
+		<a href="purplemandala.html">Purple Mandala</a>
+    </nav></h1><br/><br/><br/><br/><br/>
+   <h2 id="h2">Login Page</h2>
+	 <form align="center" action="some_page.php" method="post" onsubmit="return validate()">
+       <div class="container">
+         <label><b>EMAIL-ID</b></label><br/>
+          <input type="text" placeholder="Enter Email" name="email" required/><br/><br/>
+ 
+          <label><b>Password</b></label><br/>
+           <input type="password" placeholder="Enter Password" name="psw" required><br/><br/>
+ 
+           <button type="submit">Login</button>
+           <input type="checkbox" checked="checked"> Remember me
+        </div>
+		
+		<p id="p1">Do'nt have an account than   <a href="signup.html">Sign Up</a></p>
+ 
+        <div class="container" style="background-color:#f1f1f1">
+         <button type="button" class="cancelbtn">Cancel</button>
+           <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+   </body>
+</html>
